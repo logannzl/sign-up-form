@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js>" defer></script>
+    <script src="script.js" defer></script>
     <title>Sign-up-form</title>
 </head>
 <body>
@@ -18,13 +18,51 @@
         </div>
         <div class="form">
             <div class="top">
-
+                <div class="topText">
+                    This is not a real online service! No matter what you do, we aren't going to provide anything. Sometimes we write things that don't mean anything, 
+                    take this as an example. <br>Please still <i>fill</i> in our form. <br><br> It would mean <i>a lot</i> to us.
+                </div>
             </div>
             <div class="middle">
+                <p>Let's do this!</p>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName" />
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" />
+                        </li>
+                        <li>
 
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" />
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="LastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName" />
+                        </li>
+                        <li>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone"/>
+                        </li>
+                        <li>
+
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" />
+                        </li> 
+                    </ul>
+                </form>
             </div>
             <div class="bottom">
-
+                <button class="createAccount" id="createAccount">Create Account</button>
+                <div class="bottomtext">
+                <span>Already have an account? <span class="log">Log in</span>
+                </div>
             </div>
         </div>
     </div>
